@@ -17,19 +17,38 @@
 </head>
 
 <body>
+	
 <div data-lift="BootstrapUtil.bodyComment"></div>
 
-<div class="topbar">
-    <div class="fill">
-        <div class="container">
-            <a data-lift="site.name" class="brand" href="/">Telegram</a>
-            <ul class="nav">
-                <li data-lift="menu.items"><a href="#">Home</a></li>
-            </ul>
-	    <form data-lift="search" style="float: right"></form>
-        </div>
-    </div>
-</div>
+
+<!-- Start top menu -->
+	<div class="navbar navbar-inverse main-menu" ng-class="menuClass" role="navigation" >
+		
+		<div class="navbar-header">
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="/#/#start" class="navbar-brand"><img src="https://overresponse.com/images/logo-overresponse-white-small.png" /></a>
+		</div>
+		
+		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+			
+			<ul class="nav navbar-nav">
+				<li data-lift="menu.items">
+					<a href="#">Home</a>
+				</li>
+			</ul>
+			
+			<form data-lift="search" class="navbar-form form-login navbar-right visible-lg visible-xs">
+			</form>			
+									
+		</nav>
+
+	</div>
+<!-- End top menu -->
 
 
 <div class="container">
