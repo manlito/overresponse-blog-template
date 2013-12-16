@@ -29,7 +29,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="/#/#start" class="navbar-brand"><img src="https://overresponse.com/images/logo-overresponse-white-small.png" /></a>
+			<a href="/" class="navbar-brand"><img src="https://overresponse.com/images/logo-overresponse-white-small.png" /></a>
 		</div>
 		
 		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
@@ -40,9 +40,13 @@
 				</li>
 			</ul>
 			
-			<form data-lift="search" class="navbar-form form-login navbar-right visible-lg visible-xs">
-			</form>			
-									
+			<form class="navbar-form form-login navbar-right visible-lg visible-xs" action="https://www.google.com/search">
+				<div class="form-group">
+					<input name="q"> 
+					<input type="hidden" class="form-control" name="as_sitesearch" value="http://blog.overresponse.com">
+					<input type="submit" class="btn" value="Search">
+				</div>
+			</form>									
 		</nav>
 
 	</div>
